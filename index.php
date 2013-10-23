@@ -1,1 +1,1 @@
-<?php include_once("hei.html"); ?>
+<?php include_once("home.html"); ?>
