@@ -2,3 +2,7 @@
     zoom: 1.0;
     width: device-width;
 }
+
+body{
+	background: blue;
+}
