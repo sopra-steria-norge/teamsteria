@@ -4,5 +4,10 @@
 }
 
 body{
-	background: blue;
+	background: #f7f7f7;
+}
+
+.container {
+    background-color: #ffffff;
+    margin: 0 auto;
 }
