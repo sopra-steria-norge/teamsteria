@@ -7,26 +7,47 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/structure.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="menu"><img src="img/meny.png"/></div> 
+            <div class="menu"><i class="fa fa-reorder fa-2x"></i></div> 
             <div class="logo"><img src="img/logo.png"/></div>
-            <div class="notifications"><img src="img/flagg.png"/></div>
+            <div class="notifications"><i class="fa fa-flag fa-2x"></i></div>
         </header>
-        <ul class="buttons"><li>Status</li><li>Bilde</li><li>Ny aktivitet</li></ul>
+        <ul class="buttons">
+            <li><i class="fa fa-comment"></i>Status</li>
+            <li><i class="fa fa-camera"></i>Bilde</li>
+            <li><i class="fa fa-plus"></i>Ny aktivitet</li>
+        </ul>
         <div class="content">
+            <!-- Aktivitet nr 1 -->
             <div class="activity">
                 <img src="img/profilePicture.jpg"/>
-                <div class="info">
-                    <div><a href="#">Ola Nordmann</a> har syklet 40km på 5 timer og fikk 65p!</div>
-                    <div class="date">23. okt 2013 kl. 13:37</div>
-                </div>
-                <ul class="interact"><li>Like</li><li>Kommenter</li></ul>
+
+                <p><a href="#">Ola Nordmann</a> har syklet 40km på 5 timer og fikk 65p!</p>
+                <div class="date">23. okt 2013 kl. 13:37</div>
+
+                <ul class="interact">
+                    <li><i class="fa fa-thumbs-up"></i>Kudos</li>
+                    <li><i class="fa fa-comments"></i>Kommenter</li>
+                </ul>
+            </div>
+
+            <!-- Aktivitet nr 2 -->
+            <div class="activity">
+                <img src="img/profilePicture2.jpg"/>
+
+                <p><a href="#">Bjørn Dæhlie</a> har blitt level 3!</p>
+                <div class="date">22. okt 2013 kl. 20:20</div>
+
+                <ul class="interact">
+                    <li><i class="fa fa-thumbs-up"></i>Kudos</li>
+                    <li><i class="fa fa-comments"></i>Kommenter</li>
+                </ul>
             </div>
         </div>
-        <i class="fa fa-camera-retro"></i> fa-camera-retro
 
         <footer>Potensiell footer</footer>
     </div>
