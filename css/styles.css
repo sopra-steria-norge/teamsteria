@@ -17,7 +17,10 @@ ul {
     text-align: center;
 }
 
-.container li {
+.container  ul{
+    
+}
+.container .buttons li {
     display: inline-block;
     width: 33%;
 }
@@ -36,5 +39,40 @@ header div {
 
 .container .notifications {
     float: right;
+}
+
+.container .content{
+    padding: 1em 1.5em;
+}
+
+.container .content img{
+    width: 100px;
+    height: 100px;
+    border: 0.1em solid black;
+}
+
+.container .content a:link{
+    text-decoration: none;
+}
+
+.container .content .activity{
+    background-color: lightgreen;
+    padding: 0.4em;
+
+}
+
+.container .content .activity .info{
+    display: inline;
+}
+
+.container .content .activity .info .date{
+    color: grey;
+    font-size: 80%;
+}
+
+.container .content .activity .interact li{
+    display: inline-block;
+    width: 50%;
+    background-color: green;
 }
 

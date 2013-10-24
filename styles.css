@@ -1,0 +1,49 @@
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+
+body{
+	background: #f7f7f7;
+}
+
+.container {
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+.container li {
+    display: inline-block;
+    width: 33%;
+}
+
+header div {
+    display: inline-block;
+}
+
+.container header {
+    text-align: center;
+}
+
+.container .menu {
+    float: left;
+}
+
+.container .notifications {
+    float: right;
+}
+
+.container .content{
+    padding: 6em;
+    background-color: red;
+}
+
+.container .feed {
+    padding-left: 10px;
+    background-color: blue;
+}
