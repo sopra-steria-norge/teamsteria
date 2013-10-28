@@ -10,7 +10,6 @@ body{
 
 ul {
     padding-left: 0;
-    text-align: center;
     margin: 0;
 }
 
@@ -23,8 +22,21 @@ i {
     margin: 0 auto;
 }
 
-.container  ul{
+.container a:link{
+    text-decoration: none;
+    color: black;
+}
+.container a:visited{
+    color: black;
+}
+
+.container a:hover{
+  text-decoration: underline;
+}
+
+.container  .buttons{
     border: 0.1em solid lightgrey;
+      text-align: center;
 }
 .container .buttons li {
     display: inline-block;
@@ -68,9 +80,7 @@ header div {
     margin-right: 1em;
 }
 
-.container .content a:link{
-    text-decoration: none;
-    color: black;
+.container .content .activity p a:link{
     font-weight:bold;
 }
 
@@ -88,16 +98,20 @@ header div {
 .container .content .activity .interact{
     margin-top: 40px; /* TODO (TM) - fiks på en annen måte! */
     background-color: #FFCC66;
+      text-align: right;
 }
 
 .container .content .activity .interact li{
     display: inline-block;
-    width: 49%;
-    padding: 0.3em 0;
+    padding: 0.3em 0.3em; 
+    font-size: 80%;
 }
 
+
+
+/*
 .container .content .activity .interact li:first-child{
-    border-right: 0.1em solid lightgrey;
-}
+    border-right: 0.1em solid #FFE6B2;
+}*/
 
 
