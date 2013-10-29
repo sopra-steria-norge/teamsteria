@@ -28,13 +28,13 @@
                  <div class="activity" ng-repeat="activity in activities">
                     <img src="img/{{activity.pic}}.jpg"/>
 
-                    <p><a href="#">{{activity.name}}</a> har {{activity.type}} {{activity.distance}} på {{activity.time}} og fikk {{activity.points}} poeng!</p>
+                    <p><a href="#">{{activity.name}}</a> {{activity.status}}</p>
                     <div class="date">{{activity.date}}</div>
 
                     <ul class="interact">
                         <li><a ng-click="addKudos(activity.id)" href="">Gi kudos</a></li>
                         <li><a href="#">Kommenter</a></li>
-                        <li><a href="#"><i class="fa fa-thumbs-up"></i>{{activity.kudos}}</a></li>
+                        <li><a href="#"><i class="fa fa-thumbs-up"></i>{{activity.kudos.length}}</a></li>
                         <li><a href="#"><i class="fa fa-comments"></i>{{activity.comments}}</a></li>
                     </ul>
                 </div>
