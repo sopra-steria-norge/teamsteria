@@ -32,7 +32,7 @@
                     <div class="date">{{activity.date}}</div>
 
                     <ul class="interact">
-                        <li><a href="#">Gi kudos</a></li>
+                        <li><a ng-click="addKudos(activity.id)" href="">Gi kudos</a></li>
                         <li><a href="#">Kommenter</a></li>
                         <li><a href="#"><i class="fa fa-thumbs-up"></i>{{activity.kudos}}</a></li>
                         <li><a href="#"><i class="fa fa-comments"></i>{{activity.comments}}</a></li>
