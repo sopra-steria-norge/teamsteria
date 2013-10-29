@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <script src="js/angular.min.js"></script>
+    <script src="js/activities.js"></script>
 </head>
 <body>
     <div class="container">
@@ -23,51 +24,22 @@
             <li><i class="fa fa-plus"></i>Ny aktivitet</li>
         </ul>
         <div class="content">
-            <!-- Aktivitet nr 1 -->
-            <div class="activity">
-                <img src="img/profilePicture.jpg"/>
+            <div ng-controller="Ctrl">
+                 <div class="activity" ng-repeat="activity in activities">
+                    <img src="img/{{activity.pic}}.jpg"/>
 
-                <p><a href="#">Ola Nordmann</a> har syklet 40km på 5 timer og fikk 65 poeng!</p>
-                <div class="date">23. okt 2013 kl. 13:37</div>
+                    <p><a href="#">{{activity.name}}</a> har {{activity.type}} {{activity.distance}} på {{activity.time}} og fikk {{activity.points}} poeng!</p>
+                    <div class="date">{{activity.date}}</div>
 
-                <ul class="interact">
-                    <li><a href="#">Gi kudos</a></li>
-                    <li><a href="#">Kommenter</a></li>
-                    <li><a href="#"><i class="fa fa-thumbs-up"></i>3</a></li>
-                    <li><a href="#"><i class="fa fa-comments"></i>9</a></li>
-                </ul>
+                    <ul class="interact">
+                        <li><a href="#">Gi kudos</a></li>
+                        <li><a href="#">Kommenter</a></li>
+                        <li><a href="#"><i class="fa fa-thumbs-up"></i>{{activity.kudos}}</a></li>
+                        <li><a href="#"><i class="fa fa-comments"></i>{{activity.comments}}</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <!-- Aktivitet nr 2 -->
-            <div class="activity">
-                <img src="img/profilePicture2.jpg"/>
-
-                <p><a href="#">Bjørn Dæhlie</a> har blitt level 3!</p>
-                <div class="date">22. okt 2013 kl. 20:20</div>
-
-                <ul class="interact">
-                    <li><a href="#">Gi kudos</a></li>
-                    <li><a href="#">Kommenter</a></li>
-                    <li><a href="#"><i class="fa fa-thumbs-up"></i>4</a></li>
-                    <li><a href="#"><i class="fa fa-comments"></i>12</a></li>
-                </ul>
-            </div>
-
-            <!-- Aktivitet nr 3 -->
-            <div class="activity">
-                <img src="img/profilePicture3.jpg"/>
-
-                <p><a href="#">Kari Nordmann</a> og <a href="#">Ola Nordmann</a> har løpt 10km og fått 37 poeng!</p>
-                <div class="date">20. okt 2013 kl. 07:20</div>
-
-                <ul class="interact">
-                    <li><a href="#">Gi kudos</a></li>
-                    <li><a href="#">Kommenter</a></li>
-                    <li><a href="#"><i class="fa fa-thumbs-up"></i>4</a></li>
-                    <li><a href="#"><i class="fa fa-comments"></i>12</a></li>
-                </ul>
-            </div>
-        </div>
+            
 
         <footer>Potensiell footer</footer>
     </div>
