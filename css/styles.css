@@ -78,6 +78,7 @@ header div {
     border: 0.1em solid lightgrey;
     float: left;
     margin-right: 1em;
+    margin-bottom: 0.3em;
 }
 
 .container .content .activity p a:link{
@@ -96,10 +97,9 @@ header div {
 }
 
 .container .content .activity .interact{
-    margin-top: 1em; // TODO (TM) - funker ikke
     clear:both;
     background-color: #FFCC66;
-      text-align: right;
+    text-align: right;
 }
 
 .container .content .activity .interact li{
