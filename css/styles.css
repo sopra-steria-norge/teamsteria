@@ -96,7 +96,8 @@ header div {
 }
 
 .container .content .activity .interact{
-    margin-top: 40px; /* TODO (TM) - fiks på en annen måte! */
+    margin-top: 1em; // TODO (TM) - funker ikke
+    clear:both;
     background-color: #FFCC66;
       text-align: right;
 }
