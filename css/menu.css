@@ -10,6 +10,7 @@ body{
 .container {
     background-color: #ffffff;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 header div {
@@ -22,6 +23,8 @@ header div {
     background-color: orange;
     z-index: 1000;
     position: relative;
+    overflow: hidden;
+    display: block;
 }
 
 .container header div {
@@ -50,7 +53,7 @@ header div {
 }
 
 .container .mainmenu {
-    width: 100%;
+    width: 50%;
     position: fixed;
     top: 0;
     padding-top: 70px;
@@ -64,11 +67,11 @@ header div {
 
 #vismeny:target .mainmenu {
     position: absolute;
-    -moz-transform: translate(-99.9%, 0);
-    -webkit-transform: translate(-99.9%, 0);
-    -ms-transform: translate(-99.9%, 0);
-    -o-transform: translate(-99.9%, 0);
-    transform: translate(-99.9%, 0);
+    -moz-transform: translate(-150.5%, 0);
+    -webkit-transform: translate(-150.5%, 0);
+    -ms-transform: translate(-150.5%, 0);
+    -o-transform: translate(-150.5%, 0);
+    transform: translate(-150.5, 0);
     display: block;
     padding-top: 70px;
 }

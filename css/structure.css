@@ -5,7 +5,31 @@
 }
 
 @media screen and (max-width: 900px){
-	.container {
+	.container,
+    .container .mainmenu {
     	width: 100%;
 	}
+
+    .container .mainmenu {
+        position: fixed;
+        top: 0;
+        padding-top: 70px;
+        left: 99.9%;
+        display: none9;
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    #vismeny:target .mainmenu {
+        position: absolute;
+        -moz-transform: translate(-99.9%, 0);
+        -webkit-transform: translate(-99.9%, 0);
+        -ms-transform: translate(-99.9%, 0);
+        -o-transform: translate(-99.9%, 0);
+        transform: translate(-99.9%, 0);
+        display: block;
+        padding-top: 70px;
+    }
 }
