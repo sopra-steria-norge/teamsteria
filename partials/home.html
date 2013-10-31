@@ -1,31 +1,9 @@
-<!doctype html>
-<html lang="no" ng-app>
-<head>
-	<title>TeamSteria</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1;">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/structure.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-    <script src="js/angular.min.js"></script>
-    <script src="js/activities.js"></script>
-    <script src="js/analytics.js"></script>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="menu"><i class="fa fa-reorder fa-2x"></i></div> 
-            <div class="logo"><img src="img/logo.png"/></div>
-            <div class="notifications"><i class="fa fa-flag fa-2x"></i></div>
-        </header>
         <ul class="buttons">
             <li><i class="fa fa-comment"></i>Status</li>
             <li><i class="fa fa-camera"></i>Bilde</li>
             <li><i class="fa fa-plus"></i>Ny aktivitet</li>
         </ul>
         <div class="content">
-            <div ng-controller="Ctrl">
                  <div class="activity" ng-repeat="activity in activities">
                     <img src="img/{{activity.pic}}.jpg"/>
 
@@ -38,11 +16,5 @@
                         <li><a href="#"><i class="fa fa-thumbs-up"></i>{{activity.kudos.length}}</a></li>
                         <li><a href="#"><i class="fa fa-comments"></i>{{activity.comments}}</a></li>
                     </ul>
-                </div>
-            </div>
-            
-
-        <footer>Potensiell footer</footer>
-    </div>
-</body>
-</html>
+				</div>
+		</div>
