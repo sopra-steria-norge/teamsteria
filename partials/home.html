@@ -3,11 +3,11 @@
             <li><i class="fa fa-camera"></i>Bilde</li>
             <li><a href="#/register"><i class="fa fa-plus"></i>Ny aktivitet</a></li>
         </ul>
-        <div class="content">
+        <div class="content home">
                  <div class="activity" ng-repeat="activity in activities">
                     <img src="img/{{activity.pic}}.jpg"/>
 
-                    <p><a href="#">{{activity.name}}</a> {{activity.status}}</p>
+                    <p><a href="#/profile">{{activity.name}}</a> {{activity.status}}</p>
                     <div class="date">{{activity.date}}</div>
 
                     <ul class="interact">

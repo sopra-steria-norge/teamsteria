@@ -11,3 +11,6 @@ To run this application locally
 
 Sketches are available here:
 https://projects.invisionapp.com/share/M2J6X5A5#/screens
+
+For icons we are using: 
+http://fortawesome.github.io/Font-Awesome/icons/#web-application

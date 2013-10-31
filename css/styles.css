@@ -34,21 +34,6 @@ i {
   text-decoration: underline;
 }
 
-.container  .buttons{
-    border: 0.1em solid lightgrey;
-      text-align: center;
-}
-.container .buttons li {
-    display: inline-block;
-    width: 32%;
-    border-right: 0.1em solid lightgrey;
-    padding: 1em 0;
-    color: #827D72;
-}
-
-.container .buttons li:last-child{
-    border:0;
-}
 
 header div {
     display: inline-block;
@@ -68,17 +53,39 @@ header div {
     float: right;
 }
 
+.container .buttons{
+    border: 0.1em solid lightgrey;
+    text-align: center;
+}
+
+.container .buttons li {
+    display: inline-block;
+    width: 32%;
+    border-right: 0.1em solid lightgrey;
+    padding: 1em 0;
+    color: #827D72;
+}
+
+.container .buttons li:last-child{
+    border:0;
+}
+
 .container .content{
     padding: 1em 1.5em;
 }
 
-.container .content img{
+.container .content .activity img{
     width: 100px;
     height: 100px;
     border: 0.1em solid lightgrey;
     float: left;
     margin-right: 1em;
     margin-bottom: 0.3em;
+}
+
+.container .content.home .activity img{
+    width: 100px;
+    height: 100px;
 }
 
 .container .content .activity p a:link{
@@ -108,11 +115,21 @@ header div {
     font-size: 80%;
 }
 
+.container .content.profile img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
 
+.container .content.profile .activity{
+    clear: both;
+    margin-top: 0.5em;
+}
 
-/*
-.container .content .activity .interact li:first-child{
-    border-right: 0.1em solid #FFE6B2;
-}*/
-
+.container .content.profile .activity img{
+    width: 60px;
+    height: 60px;
+}
 
