@@ -3,9 +3,15 @@ angular.module('teamsteria')
         function($scope, $rootScope) {
 
         	if($rootScope.newActivity == undefined){
-        		$rootScope.newActivity = {date:'1. nov 2013 kl. 16:35', type:''}
+        		$rootScope.newActivity = {date:'31. nov 2013', type:''}
         	}
         	$scope.newActivity = $rootScope.newActivity
+        	$scope.activities = $rootScope.activities
+			$scope.profileActivities = $rootScope.profileActivities
+
+	    	$scope.saveActivity = function(){
+	        	$rootScope.profileActivities.push({name:'Ola Nordmann', date:$scope.newActivity.date , pic:'olaNordmann', status:'har $scope.newActivity.date 40km på 5 timer og fikk 65 poeng!'})
+        	}
 
         	
 		
