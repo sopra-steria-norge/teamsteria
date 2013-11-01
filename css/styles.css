@@ -127,6 +127,14 @@ header div {
     margin-right: 0.5em;
 }
 
+.container .profile_details .information {
+    overflow: hidden;
+    background-image:url("/img/stat.jpg");
+    background-size:400px 200px;
+    background-repeat:no-repeat;
+    background-position:right;
+}
+
 .container .content.profile .activity{
     clear: both;
     margin-top: 0.5em;

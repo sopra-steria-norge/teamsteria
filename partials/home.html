@@ -1,40 +1,53 @@
-<div id="sp-nav" class="wide" class="wide">
+<div id="sp-nav" class="wide">
     <div class="topcoat-list-container">
         <ul class="topcoat-list">
             <li class="topcoat-list__item"><a href="#/profile">Profilside</a></li>
             <li class="topcoat-list__item"><a href="#/home">Aktivitetsstrøm</a></li>
+            <li class="topcoat-list__item"><a href="#/home">Mine aktiviteter</a></li>
+            <li class="topcoat-list__item"><a href="#/home">Toppliste</a></li>
+            <li class="topcoat-list__item"><a href="#/home">Eventer</a></li>
+            <li class="topcoat-list__item"><a href="#/home">Utfordringer</a></li>
+            <li class="topcoat-list__item"><a href="#/home">Følg kollegaer</a></li>
+            <li class="topcoat-list__item"><a href="#/home">Klatrelaget</a></li>
+            <li class="topcoat-list__item"><a href="#/home">Bowlinglaget</a></li>
+            <li class="topcoat-list__item"><a href="#/home">Se alle lag</a></li>
+            <li class="topcoat-list__item"><a href="#/home">Opprett nytt lag</a></li>
         </ul>
     </div>
 </div>
 
 <div id="sp-page">
 
-    <header>
-        <div class="logo"><img src="img/logo.png"/></div>
-        <div class="notifications"><i class="fa fa-flag fa-2x"></i></div>
-        <span class="fa fa-reorder fa-2x toggleMenu" ng-click="$spMenu.toggle()"></span>
-    </header>
+    <div class="topcoat-navigation-bar">
 
-    <ul class="buttons">
-        <li><i class="fa fa-comment"></i>Status</li>
-        <li><i class="fa fa-camera"></i>Bilde</li>
-        <li><a href="#/activity"><i class="fa fa-plus"></i>Ny aktivitet</a></li>
-    </ul>
-    <div class="content home">
-        <div class="activity" ng-repeat="activity in activities">
-            <img src="img/{{activity.pic}}.jpg"/>
+        <header>
+            <div class="logo"><img src="img/logo.png"/></div>
+            <div class="notifications"><i class="fa fa-flag fa-2x"></i></div>
+            <span class="fa fa-reorder fa-2x toggleMenu" ng-click="$spMenu.toggle()"></span>
+        </header>
 
-            <p><a href="#/profile">{{activity.name}}</a> {{activity.status}}</p>
-
-            <div class="date">{{activity.date}}</div>
-
-            <ul class="interact">
-                <li><a ng-click="addKudos(activity.id)" href="">Gi kudos</a></li>
-                <li><a href="#">Kommenter</a></li>
-                <li><a href="#"><i class="fa fa-thumbs-up"></i>{{activity.kudos.length}}</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>{{activity.comments}}</a></li>
+        <div>
+            <ul class="buttons">
+                <li><i class="fa fa-comment"></i>Status</li>
+                <li><i class="fa fa-camera"></i>Bilde</li>
+                <li><a href="#/activity"><i class="fa fa-plus"></i>Ny aktivitet</a></li>
             </ul>
+            <div class="content home">
+                <div class="activity" ng-repeat="activity in activities">
+                    <img src="img/{{activity.pic}}.jpg"/>
+
+                    <p><a href="#/profile">{{activity.name}}</a> {{activity.status}}</p>
+
+                    <div class="date">{{activity.date}}</div>
+
+                    <ul class="interact">
+                        <li><a ng-click="addKudos(activity.id)" href="">Gi kudos</a></li>
+                        <li><a href="#">Kommenter</a></li>
+                        <li><a href="#"><i class="fa fa-thumbs-up"></i>{{activity.kudos.length}}</a></li>
+                        <li><a href="#"><i class="fa fa-comments"></i>{{activity.comments}}</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>

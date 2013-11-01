@@ -8,7 +8,7 @@ body{
 }
 
 .container {
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -34,6 +34,7 @@ header div {
 .container .toggleMenu {
     float: left;
     height: 3.75rem;
+    cursor: pointer;
 }
 
 .topcoat-list {
@@ -52,3 +53,8 @@ header div {
     padding: 10px;
     border-bottom: 1px solid #bcbfbf;
 }
+
+.topcoat-navigation-bar {
+    background-color: #ffffff;
+}
+
