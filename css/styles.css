@@ -18,6 +18,11 @@ i {
     margin-right: 0.3em;
 }
 
+input{
+    width: 12em;
+    height: 2em;
+}
+
 .container {
     background-color: #ffffff;
     margin: 0 auto;
@@ -141,13 +146,31 @@ header div {
 }
 
 .container .content.newActivity .navigation li{
-    list-style-type: none;
-    padding: 0.4em;
-    background: lightgrey; 
-    border: solid grey 1px;
+   display: inline;
 }
 
 .container .content.newActivity .navigation li a{
-    
+    float: left;
+    padding: 0.4em;
+    border: solid grey 1px;
+    background-color: #FFE6B2;
+    width: 100%;
+}
+
+.container .content.newActivity .navigation li a span{
+    float: right;
+    color: grey;
+}
+
+.container .content.newActivity .save{
+    float: right;
+    margin-bottom: 1em;
+    background-color: lightgrey;
+    padding: 1em;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
