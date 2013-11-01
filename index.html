@@ -11,37 +11,18 @@
 	<link href="css/menu.css" rel="stylesheet"/>
 	<link href="css/structure.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="css/ng-mobile-menu.css"/>
     <script src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/ng-mobile-menu.js"></script>
     <script src="js/app.js"></script>
     <script src="js/homeCtrl.js"></script>
     <script src="js/menuCtrl.js"></script>
     <script src="js/profileCtrl.js"></script>
     <script src="js/activityCtrl.js"></script>
 </head>
-<body>
+<body class="container">
 
-	<div class="container">
-        <header>
-            <div class="toggleMenu">
-                <div class="button">
-                    <a href="#vismeny" class="showMenu"><span class="fa fa-reorder fa-2x"></span></a>
-                    <a href="#" class="closeMenu"><span class="fa fa-reorder fa-2x"></span></a>
-                </div>
-            </div>
-            <div class="logo"><img src="img/logo.png"/></div>
-            <div class="notifications"><i class="fa fa-flag fa-2x"></i></div>
-        </header>
-
-        <nav class="mainmenu">
-            <ul>
-                <li><a href="#">Menypunkt1</a></li>
-                <li><a href="#">Menypunkt2</a></li>
-                <li><a href="#">Menypunkt3</a></li>
-                <li><a href="#">Menypunkt4</a></li>
-            </ul>
-        </nav>
         <div ng-view></div>
-    </div>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-angular.module('teamsteria', []).
+angular.module('teamsteria', ['shoppinpal.mobile-menu']).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider.
             when('/home', {templateUrl: 'partials/home.html',   controller: 'HomeCtrl'}).
