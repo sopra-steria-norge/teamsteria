@@ -169,6 +169,7 @@ header div {
 .container .content.newActivity .navigation li a span{
     float: right;
     color: grey;
+    margin-right: 2%;
 }
 
 .container .content.newActivity .save{
@@ -177,7 +178,7 @@ header div {
     background-color: lightgrey;
     padding: 0.5em;
     font-size: 80%;
-
+    margin-right: 1%;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
