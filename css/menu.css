@@ -34,6 +34,7 @@ header div {
 .container .toggleMenu {
     float: left;
     height: 3.75rem;
+    cursor: pointer;
 }
 
 .topcoat-list {
