@@ -174,7 +174,8 @@ header div {
     float: right;
     margin-bottom: 1em;
     background-color: lightgrey;
-    padding: 1em;
+    padding: 0.5em;
+    font-size: 80%;
 
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
