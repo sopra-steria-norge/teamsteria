@@ -20,11 +20,13 @@
 
 		<nav class="navigation"> 
 		    <ul class="navigation">  
-		        <li><a href="#/date">Dato</a></li>  
-		        <li><a href="#/duration">Varighet</a></li>  
+		        <li>Dato: <input type="date" ng-model="newActivity.date"></li>  
+		        <li>Varighet: <input type="text" name="duration"></li>  
 		        <li><a href="#/pickActivity">Aktivitet</a></li>   
 		    </ul> 
 	    </nav>
+
+	    <a ng-click="addActivity(newActivity)" href="">Lagre</a>
 
 
 	<!--	<button>
