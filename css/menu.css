@@ -34,83 +34,21 @@ header div {
 .container .toggleMenu {
     float: left;
     height: 3.75rem;
-    font-size: 1.2rem;
 }
 
-.container .toggleMenu .button {
-    display: inline-block;
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    content: "\e036";
-    vertical-align: middle;
-    height: 2.5rem;
-    background-color: #555;
-    background-image: -webkit-linear-gradient(top,rgba(255,255,255,.1),rgba(0,0,0,.1));
-    color: #ffffff;
-}
-
-.container .toggleMenu a {
-    color: #ffffff;
-}
-
-.container .mainmenu {
-    width: 50%;
-    position: fixed;
-    top: 0;
-    padding-top: 70px;
-    left: 99.9%;
-    display: none9;
-    -moz-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#vismeny:target .mainmenu {
-    position: absolute;
-    -moz-transform: translate(-150.5%, 0);
-    -webkit-transform: translate(-150.5%, 0);
-    -ms-transform: translate(-150.5%, 0);
-    -o-transform: translate(-150.5%, 0);
-    transform: translate(-150.5, 0);
-    display: block;
-    padding-top: 70px;
-}
-
-.container .mainmenu ul {
-    list-style-type: none;
-    margin: 10px;
+.topcoat-list {
     padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-top: 1px solid #bcbfbf;
+    color: #454545;
 }
 
-.container .mainmenu li {
-    margin-bottom: 4px;
+.topcoat-list__item:first-child {
+    border-top: 1px solid rgba(0,0,0,.05);
 }
-
-.container .mainmenu a {
-    color: #ffffff;
-    font-family: "Droid Serif", cambria, palantino, arial, sans-serif;
-    font-style: italic;
-    color: #363636;
-    display: block;
-    background: white;
-    padding: 18px;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: left;
+.topcoat-list__item {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #bcbfbf;
 }
-
-#vismeny:target .closeMenu {
-    display: block;
-}
-
-#vismeny:target .showMenu {
-    display: none;
-}
-
-#vismeny:not(:target) .closeMenu {
-    display: none;
-}
-.container .notifications {
-    float: right;
-}
-
