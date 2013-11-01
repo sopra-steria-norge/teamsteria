@@ -1,10 +1,12 @@
 angular.module('teamsteria')
-    .controller('ActivityCtrl', ['$scope',
-        function($scope) {
+    .controller('ActivityCtrl', ['$scope', '$rootScope',
+        function($scope, $rootScope) {
 
-        	$scope.addActivity= function(newActivity) {
-        		console.log("gamle " + $scope.activities[0].date)
-        		console.log("ny: " + newActivity.date);
-				$scope.activities.push({date:'newActivity.date'}) }
+        	if($rootScope.newActivity == undefined){
+        		$rootScope.newActivity = {date:'1. nov 2013 kl. 16:35', type:''}
+        	}
+        	$scope.newActivity = $rootScope.newActivity
+
+        	
 		
 	}]);
