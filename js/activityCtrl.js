@@ -11,7 +11,7 @@ angular.module('teamsteria')
 
 	    	$scope.saveActivity = function(){
 	    		var status = 'har ' + $scope.newActivity.type + ' ' + $scope.newActivity.duration + ' minutter og fått 40 poeng!';
-	        	$rootScope.profileActivities.unshift({name:'Ola Nordmann', date:$scope.newActivity.date , pic:'olaNordmann', status:status, kudos:[], comments:0})
+	        	$rootScope.profileActivities.unshift({name:'Ola Nordmann', date:$scope.newActivity.date , pic:'profilePicture3', status:status, kudos:[], comments:0})
 
         	}
 
