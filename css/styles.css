@@ -6,6 +6,7 @@
 body{
 	background: #f7f7f7;
     font-family: 'Arvo', serif;
+    font-size: 120%
 }
 
 ul {
@@ -134,23 +135,21 @@ header div {
 }
 
 .container .content.newActivity .navigation {
-    
+
 }
 
 .container .content.newActivity .navigation ul{
-   
+
 }
 
 .container .content.newActivity .navigation li{
-       display: inline;  
+    list-style-type: none;
+    padding: 0.4em;
+    background: lightgrey; 
+    border: solid grey 1px;
 }
 
-.container .content.newActivity .navigation a{
-
-    float: left;  
-    width: 100%;
-    padding: 0.4em;
-    border: solid grey 1px;
-    background: lightgrey; 
+.container .content.newActivity .navigation li a{
+    
 }
 

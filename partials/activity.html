@@ -1,29 +1,49 @@
-﻿<div class="content newActivity">
+﻿<div id="sp-nav">
+    <div class="topcoat-list-container">
+        <ul class="topcoat-list">
+            <li class="topcoat-list__item">Profilside</li>
+            <li class="topcoat-list__item">Ny aktivitet</li>
+        </ul>
+    </div>
+</div>
 
-	<nav class="navigation"> 
-	    <ul class="navigation">  
-	        <li><a href="#/date">Dato</a></li>  
-	        <li><a href="#/duration">Varighet</a></li>  
-	        <li><a href="#/pickActivity">Aktivitet</a></li>   
-	    </ul> 
-    </nav>
+<div id="sp-page">
+
+    <header>
+        <div class="logo"><img src="img/logo.png"/></div>
+        <div class="notifications"><i class="fa fa-flag fa-2x"></i></div>
+        <span class="fa fa-reorder fa-2x toggleMenu" ng-click="$spMenu.toggle()"></span>
+    </header>
+
+	<div class="content newActivity">
+
+		<nav class="navigation"> 
+		    <ul class="navigation">  
+		        <li>Dato: <input type="date" ng-model="newActivity.date"></li>  
+		        <li>Varighet: <input type="text" name="duration"></li>  
+		        <li><a href="#/pickActivity">Aktivitet</a></li>   
+		    </ul> 
+	    </nav>
+
+	    <a ng-click="addActivity(newActivity)" href="">Lagre</a>
 
 
-<!--	<button>
-      Avbryt
-    </button>
-	Ny Aktivitet
-	<button>
-      Lagre
-    </button>
+	<!--	<button>
+	      Avbryt
+	    </button>
+		Ny Aktivitet
+		<button>
+	      Lagre
+	    </button>
 
-	<div>
-		Dato
+		<div>
+			Dato
+		</div>
+		<div>
+			Varighet
+		</div>
+		<div>
+			Aktivitet
+		</div> -->
 	</div>
-	<div>
-		Varighet
-	</div>
-	<div>
-		Aktivitet
-	</div> -->
 </div>
